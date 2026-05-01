@@ -1,5 +1,7 @@
+eval "$(/opt/homebrew/bin/brew shellenv bash)"
+
 # Exports
-export PATH="/usr/local/bin:/usr/local/sbin:/Users/john/Repos/aws-profile-bash-prompt:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/Users/johnreed/.darkbloom/bin:/opt/homebrew/bin:/Users/johnreed/.local/bin:/Users/johnreed/repos/aws-profile-bash-prompt:$PATH"
 export EDITOR='vim'
 
 # Set default editor
@@ -54,7 +56,9 @@ hdate() {
 
 #Aliases
 alias ll='ls -alGFh'
-alias repos='cd ~/Repos'
+alias repos='cd ~/repos'
+alias profile='source ~/.bash_profile'
+alias keygen='read -p "Enter key filename (e.g. id_github): " name && read -p "Enter email/comment: " email && ssh-keygen -t ed25519 -C "$email" -f ~/.ssh/"$name"'
 
 #Functions - System
 
