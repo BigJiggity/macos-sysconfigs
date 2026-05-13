@@ -3,6 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv bash)"
 # Exports
 export PATH="/usr/local/bin:/usr/local/sbin:/Users/johnreed/.darkbloom/bin:/opt/homebrew/bin:/Users/johnreed/.local/bin:/Users/johnreed/repos/aws-profile-bash-prompt:$PATH"
 export EDITOR='vim'
+export TG_DOWNLOAD_DIR="/tmp/terragrunt/cache"
 
 # Set default editor
 EDITOR=vim
